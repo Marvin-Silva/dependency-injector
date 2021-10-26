@@ -15,9 +15,16 @@ class Logger
     {
         //$todos = $this->todoService->getAll()
         // then filter to get completed todos
-        echo "Retun completed todos";
+        echo "Return completed todos";
     }
 
+
+    public function notCompleted()
+    {
+        //$todos = $this->todoService->getAll()
+        // then filter to get not completed todos
+        echo "Return completed todos";
+    }
 
 
     public function getAll()

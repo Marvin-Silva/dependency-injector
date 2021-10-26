@@ -12,14 +12,7 @@ $todoServices = new TodoServices([
     $todo1, $todo2, $todo3
 ]);
 
-$newTodo = new Todo(4, "Quatrième todo", "voila", true);
-
-var_dump($todoServices->create($newTodo));
-var_dump($todoServices->getAll());
-var_dump($todoServices->getById(1));
-var_dump($todoServices->update(1));
-var_dump($todoServices->delete(1));
-
 $logger = new Logger($todoServices);
+
 $logger->getCompleted();
 $logger->getAll();
