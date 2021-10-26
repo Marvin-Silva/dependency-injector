@@ -1,0 +1,15 @@
+{
+    "name": "hnktt/02-design-pattern",
+    "autoload": {
+        "psr-4": {
+            "Hnktt\\02DesignPattern\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Paul-Mathias Logue",
+            "email": "42704376+hnktt@users.noreply.github.com"
+        }
+    ],
+    "require": {}
+}
