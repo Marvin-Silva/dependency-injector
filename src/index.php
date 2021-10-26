@@ -1,7 +1,8 @@
 <?php
 
-require("Todo.php");
-require("TodoServices.php");
+require_once("Todo.php");
+require_once("TodoServices.php");
+require_once("Logger.php");
 
 $todo1 = new Todo(1, "Premier todo", "voila", false);
 $todo2 = new Todo(2, "Deuxième todo", "voila", true);
@@ -19,4 +20,6 @@ var_dump($todoServices->getAll());
 var_dump($todoServices->getById(1));
 var_dump($todoServices->update(1));
 var_dump($todoServices->delete(1));
-// todocontroller => createTodo / getTodos / getTodo/ setCompleted 
+
+$logger = new Logger($todoServices);
+$logger->getCompleted();
